@@ -1,25 +1,37 @@
+import Image from "next/image";
+import { site } from "@/content/site";
 import { cn } from "@/lib/utils";
+
+/** Fichier maître fourni par la charte (fond transparent — fond sombre du site). */
+export const LOGO = {
+  src: "/brand/logo-target-agency.png",
+  width: 821,
+  height: 316,
+  alt: `${site.name} — Target agency`,
+} as const;
 
 export function LogoMark({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 40 40" fill="none" aria-hidden className={cn("h-8 w-8", className)}>
-      <circle cx="18" cy="22" r="15" stroke="currentColor" strokeWidth="2.4" />
-      <circle cx="18" cy="22" r="8.5" stroke="currentColor" strokeWidth="2.4" />
-      <circle cx="18" cy="22" r="2.6" fill="#ff3a24" />
-      <path d="M18 22 L35 5" stroke="#ff3a24" strokeWidth="2.6" strokeLinecap="round" />
-      <path d="M28.5 5 H35 V11.5" stroke="#ff3a24" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
+    <Image
+      src={LOGO.src}
+      alt=""
+      width={LOGO.width}
+      height={LOGO.height}
+      aria-hidden
+      className={cn("h-5 w-auto", className)}
+    />
   );
 }
 
-export function Logo({ className }: { className?: string }) {
+export function Logo({ className, priority }: { className?: string; priority?: boolean }) {
   return (
-    <span className={cn("inline-flex items-center gap-2.5 text-bone", className)}>
-      <LogoMark />
-      <span className="font-display text-[1.05rem] font-bold tracking-[-0.03em]">
-        Target<span className="font-medium text-mute"> agency</span>
-        <sup className="ml-0.5 text-[0.55em] text-accent">®</sup>
-      </span>
-    </span>
+    <Image
+      src={LOGO.src}
+      alt={LOGO.alt}
+      width={LOGO.width}
+      height={LOGO.height}
+      priority={priority}
+      className={cn("h-8 w-auto md:h-9", className)}
+    />
   );
 }

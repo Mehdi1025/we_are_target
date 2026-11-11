@@ -35,7 +35,10 @@ export const metadata: Metadata = {
     images: [{ url: "/brand/og.jpg", width: 1200, height: 630, alt: site.name }],
   },
   twitter: { card: "summary_large_image", images: ["/brand/og.jpg"] },
-  icons: { icon: "/brand/logo-mark.svg" },
+  icons: {
+    icon: "/brand/logo-target-agency-marine.png",
+    apple: "/brand/logo-target-agency-marine.png",
+  },
 };
 
 export const viewport: Viewport = {

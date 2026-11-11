@@ -57,7 +57,7 @@ export function Header() {
         <div className="shell flex h-16 items-center justify-between md:h-20">
           <Magnetic strength={0.2} className="relative z-10">
             <Link href="/" aria-label={`${site.name} — accueil`}>
-              <Logo />
+              <Logo priority />
             </Link>
           </Magnetic>
 
