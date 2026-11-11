@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" fill="none" role="img" aria-label="Target Agency">
+  <g transform="translate(2 4)">
+    <circle cx="18" cy="22" r="15" stroke="#f4f3ef" stroke-width="2.6"/>
+    <circle cx="18" cy="22" r="8.5" stroke="#f4f3ef" stroke-width="2.6"/>
+    <circle cx="18" cy="22" r="2.8" fill="#ff3a24"/>
+    <path d="M18 22 L35 5" stroke="#ff3a24" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M28.5 5 H35 V11.5" stroke="#ff3a24" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="50" y="33" font-family="'Plus Jakarta Sans', Inter, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.7" fill="#f4f3ef">Target<tspan font-weight="500" fill="#a1a09b"> agency</tspan><tspan font-size="12" dy="-11" fill="#ff3a24">®</tspan></text>
+</svg>
